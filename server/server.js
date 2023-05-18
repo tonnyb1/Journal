@@ -10,6 +10,25 @@ const nodemailer = require('nodemailer');
 const jwtSecret = process.env.JWT_SECRET;
 const port = process.env.PORT || 3000;
 
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+// Serve the static files from the dist folder
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Handle all other routes with the index.html file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+// Start the JSON server and listen for incoming requests
+app.listen(3000, () => {
+  console.log('JSON Server is running on port 3000');
+});
+
+
 // Define a cron schedule to run the function every day at 12 PM (noon) Kenyan time
 cron.schedule('0 12 * * *', () => {
   getRecentJournalEntries();
