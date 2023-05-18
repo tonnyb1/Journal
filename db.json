@@ -1,235 +1,24 @@
 {
   "users": [
     {
-      "id": "302290a4-8abb-402c-9e00-5f02a0641ab4",
-      "email": "b@b.com",
-      "password": "p123",
-      "journals": []
-    },
-    {
-      "id": "434d0d82-9e0b-4fa0-9980-9e2f9ba0366c",
-      "email": "b@bfef.com",
-      "password": "$2b$10$VY6R4c3YmlC8wBqUAWzyHOCq4xcgrhz2W9Pyys3JN4AP2UBmhFgeW",
-      "journals": []
-    },
-    {
-      "id": "a4baba4c-1328-4f37-8402-465134143d9b",
-      "email": "b@bfweef.com",
-      "password": "$2b$10$5ZKu4463PW9eZfhnOM6qve7q/ilqRuKvzM.rEBYisOUe1Zwp6ky.e",
-      "journals": []
-    },
-    {
-      "id": "8ea1fd69-8a6c-486c-98e3-94fea8e96a2f",
-      "email": "bdffef@bfweef.com",
-      "password": "$2b$10$.vLqf/QKZ0aM751XV2VYa.SCj112M33xJQ3A0elbQ7mNBzeigmG06",
-      "journals": []
-    },
-    {
       "id": "59a1d70f-364f-4007-a90b-c1af399ec01e",
       "email": "b@bi.com",
       "password": "$2b$10$TqAdV1fkdOcS4ut4GG0dpeKYDuuk7iBeG7FIUDmxh1g2lwQIZH8Qu",
       "journals": [
         {
-          "id": "32add256-a0a8-4424-b019-4ff2611327dc",
-          "createdAt": 1684331865938,
-          "content": "ijrjerjjr4jrio4jrm",
-          "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
-        },
-        {
-          "id": "1663e72d-3d38-4d0e-a307-b279f149f1e8",
-          "createdAt": 1684333712233,
-          "content": "kdmkemdkmewkldme",
-          "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
-        },
-        {
           "id": "75f7e1d7-cddf-4d0d-95eb-10ff2aeee006",
           "createdAt": 1684333818441,
           "content": " I have good interpersonal and communication skills and have been able to work effectively with team members contributing to ideas, willing to always learn and provide mentorship where needed. I have also been able to manage customer expectations and relationships effectively. \n",
           "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
-        },
-        {
-          "id": "cd5fcdc1-7e7a-428d-82b7-64d5c9023c59",
-          "createdAt": 1684334117865,
-          "content": "I will not suffer ",
-          "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
-        },
-        {
-          "id": "5e0cdd69-fafd-4359-81bd-546b13b0a6fc",
-          "createdAt": 1684335101766,
-          "content": "jdnkjehdejbchebvhehrfvr",
-          "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
-        },
-        {
-          "id": "515f9312-65a8-4c97-8e43-20d5df8bc852",
-          "createdAt": 1684350121755,
-          "content": ",nmm,n m,n m,",
-          "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
-        },
-        {
-          "id": "9ef3eb2c-7ddc-4ecd-9c87-283b55682aac",
-          "createdAt": 1684387797953,
-          "content": "nkjnkjnjniujnioj",
-          "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
-        },
-        {
-          "id": "6a91f1ba-1259-4f2e-bf96-d892457194f3",
-          "createdAt": 1684396541552,
-          "content": "flelefek",
-          "userId": "59a1d70f-364f-4007-a90b-c1af399ec01e"
         }
       ]
-    },
-    {
-      "id": "7a6befc2-631f-4b7a-ad73-66f288efea5f",
-      "email": "b@brer.com",
-      "password": "$2b$10$lNCiJkhc8Z9xcuSgbdppeODNJQbUKvWYRqZET1tSwKblS04Wwc5Rq",
-      "journals": []
     },
     {
       "id": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe",
       "email": "betttonny966@gmail.com",
       "password": "$2b$10$VOc4MK9cI4v07PWCAbneKeJeivBLEmqfW0gnk9l3JAG1oWzbtSbEa",
       "journals": [
-        {
-          "id": "c6d9c064-b6b4-4110-98f8-29c1fde322e6",
-          "createdAt": 1684332463271,
-          "content": "However, it's also possible that there is an issue with how the token was generated and signed. It might be worth checking the code that generates the token to make sure that it includes all the necessary claims, including the 'id' claim, if applicable.\n\nIt's best practice to include a unique 'id' claim in your JWTs, especially if you use the token for authentication purposes. This allows you to identify the authenticated user across multiple requests and ensure that the user has the appropriate",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "dbf20322-095c-46d6-8e67-557383f3fced",
-          "createdAt": 1684332518835,
-          "content": "GraphQL is the developer-friendly query language for the modern web. It transforms how apps fetch data from an API, enabling you to get exactly what you need with a single query—instead of wrangling responses from a patchwork of REST endpoints.",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "7d0d0c77-e3c6-4cda-8326-7c672c2af1f4",
-          "createdAt": 1684335299383,
-          "content": "kmklmvkjenkjfnkjenfjknec e",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "fa31d504-a6e4-4c10-8b30-bc9d7f6bb749",
-          "createdAt": 1684335531346,
-          "content": "yfyftftvgfcvgfcfgcfgc",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "51299886-e42d-4ed9-9f77-6a2136af2588",
-          "createdAt": 1684336072331,
-          "content": "I went to az oo i saw a naoklede",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "6e47964f-4f79-4ec5-8044-f366e86a1cd4",
-          "createdAt": 1684336101005,
-          "content": "vbghvbghbhhbubh",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "b61403c8-5757-454c-b132-8419f15249f7",
-          "createdAt": 1684336155682,
-          "content": "I went to a zoo yesterday night",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "0fa17c9e-a0b6-4328-af87-58a62fdb4a72",
-          "createdAt": 1684338151130,
-          "content": "my education is key\n",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        },
-        {
-          "id": "04830752-b232-438b-beba-eaf93a51d7c8",
-          "createdAt": 1684338767112,
-          "content": "i cook on a daily \n\n",
-          "userId": "dc9c0ae9-93f3-4e98-bacc-25fbfcb24cfe"
-        }
-      ]
-    },
-    {
-      "id": "d3f116b3-e7c1-4f6d-97a3-da2fe73eb699",
-      "email": "b@bibo.com",
-      "password": "$2b$10$mpoxegz5LsKzG4sAUuCd0uPO221SRtBdifsa6iK1gMW/a1SkIrcc6",
-      "journals": [
-        {
-          "id": "0202e8e8-1f05-4544-b108-ee6e883d96f0",
-          "createdAt": 1684338882695,
-          "content": "We go shopping sometimes",
-          "userId": "d3f116b3-e7c1-4f6d-97a3-da2fe73eb699"
-        },
-        {
-          "id": "322abfcc-febe-478b-8644-8831f9f5f182",
-          "createdAt": 1684339198478,
-          "content": "nvjkdjvdhjnvcdhncd",
-          "userId": "d3f116b3-e7c1-4f6d-97a3-da2fe73eb699"
-        },
-        {
-          "id": "9f2fecf8-0557-4fde-9527-36df06384090",
-          "createdAt": 1684339263793,
-          "content": "i go to school",
-          "userId": "d3f116b3-e7c1-4f6d-97a3-da2fe73eb699"
-        },
-        {
-          "id": "69809665-a8e6-4576-98a2-c12c184a5590",
-          "createdAt": 1684339301706,
-          "content": "kdmkwmdkjewmd",
-          "userId": "d3f116b3-e7c1-4f6d-97a3-da2fe73eb699"
-        },
-        {
-          "id": "5245d507-4484-43ba-b06d-31d672e54ac1",
-          "createdAt": 1684339374771,
-          "content": "I want to bawl one day\n",
-          "userId": "d3f116b3-e7c1-4f6d-97a3-da2fe73eb699"
-        },
-        {
-          "id": "6e002c4c-b708-445c-98de-c067abce9d6d",
-          "createdAt": 1684339438028,
-          "content": "I need a bike to go to school",
-          "userId": "d3f116b3-e7c1-4f6d-97a3-da2fe73eb699"
-        }
-      ]
-    },
-    {
-      "id": "eae078ce-1461-4b2a-a27e-ef3d76c90961",
-      "email": "b@bafric.com",
-      "password": "$2b$10$PFt7./UwQIvCtwjWvH86U..TK9hXLY2aL9fdyNbZL1bdKHUCJwLwW",
-      "journals": [
-        {
-          "id": "a010b3e1-3a5f-4c72-8b20-2321caf24af2",
-          "createdAt": 1684339670804,
-          "content": "so we reap what we plan",
-          "userId": "eae078ce-1461-4b2a-a27e-ef3d76c90961"
-        },
-        {
-          "id": "234e32cc-7de6-4360-8774-020b37692dbd",
-          "createdAt": 1684339858236,
-          "content": "ride or die today was crazy",
-          "userId": "eae078ce-1461-4b2a-a27e-ef3d76c90961"
-        },
-        {
-          "id": "858a835b-fa86-4912-9d8b-88d2ff0af93b",
-          "createdAt": 1684339916117,
-          "content": "we gonna fkt today",
-          "userId": "eae078ce-1461-4b2a-a27e-ef3d76c90961"
-        },
-        {
-          "id": "bddadc2c-37ed-4f6c-9671-c61d4d2a7f52",
-          "createdAt": 1684340834351,
-          "content": "i went to a zoo\n",
-          "userId": "eae078ce-1461-4b2a-a27e-ef3d76c90961"
-        },
-        {
-          "id": "4b869986-5547-4114-b652-e3c4d070e9b2",
-          "createdAt": 1684340988013,
-          "content": "WE will go hungry tonight",
-          "userId": "eae078ce-1461-4b2a-a27e-ef3d76c90961"
-        },
-        {
-          "id": "942b62be-1f54-48c9-bc5a-2f1460f9e90a",
-          "createdAt": 1684341127404,
-          "content": "How to make an omelete today , i don't know ",
-          "userId": "eae078ce-1461-4b2a-a27e-ef3d76c90961"
-        }
+ 
       ]
     },
     {
@@ -242,69 +31,6 @@
           "createdAt": 1684343198006,
           "content": "If an app or site doesn’t meet our security standards, Google might block anyone who’s trying to sign in to your account from it. Less secure apps can make it easier for hackers to get in to your account, so blocking sign-ins from these apps helps keep your account safe.",
           "userId": "44a03ffd-a2bf-4078-8571-42d9107d6bfd"
-        }
-      ]
-    },
-    {
-      "id": "eaa57864-bb90-4c0b-901e-2b7e3d403acc",
-      "email": "b@bo.com",
-      "password": "$2b$10$K42RtziHIxkqKRzVM4YbUOTaGnBi9B1mjZDLbngGnpQahobCJrCKe",
-      "journals": [
-        {
-          "id": "087b9f3d-d904-418c-b6f6-e6eb55322974",
-          "createdAt": 1684343297459,
-          "content": "If an app or site doesn’t meet our security standards, Google might block anyone who’s trying to sign in to your account from it. Less secure apps can make it easier for hackers to get in to your account, so blocking sign-ins from these apps helps keep your account safe.",
-          "userId": "eaa57864-bb90-4c0b-901e-2b7e3d403acc"
-        },
-        {
-          "id": "dbdd56c1-a6bc-490b-ab59-865d8af97ed0",
-          "createdAt": 1684343391999,
-          "content": "Error: getaddrinfo ENOTFOUND smtp.gmail.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {\n  errno: -3008,\n  code: 'EDNS',\n  syscall: 'getaddrinfo',\n  hostname: 'smtp.gmail.com',\n  command: 'CONN'\n}",
-          "userId": "eaa57864-bb90-4c0b-901e-2b7e3d403acc"
-        },
-        {
-          "id": "448c9aab-95d0-4cde-8593-9cbdac4fd8c5",
-          "createdAt": 1684343985972,
-          "content": "21 20 * * *",
-          "userId": "eaa57864-bb90-4c0b-901e-2b7e3d403acc"
-        }
-      ]
-    },
-    {
-      "id": "7e1d74c2-c0cc-4be7-811a-fd88e4a8386c",
-      "email": "matinodev@gmail.com",
-      "password": "$2b$10$Ewr.7GaISjdMgcTAZTgzROT/sSl0Vf.uzqrv.6lyedJjWHyoGIYwi",
-      "journals": [
-        {
-          "id": "7582ed69-4c6c-45ac-a52d-14d3602d305a",
-          "createdAt": 1684344288430,
-          "content": "\nHi Tonny,\n\nWe’re pleased to let you know that as of 17/05/2023, we’re offering three new currency pairs:\n\nGBPSEK\n\nGBPMXN\n\nGBPZAR\n\nHere at Scope Markets, we’re always excited to expand our range of products and services – keep a lookout for more updates!\n\nIf you have any questions, feel free to contact our Customer Support Team. We’re always here to help.\n\nKind regards,\n\n",
-          "userId": "7e1d74c2-c0cc-4be7-811a-fd88e4a8386c"
-        }
-      ]
-    },
-    {
-      "id": "0cf56927-fc26-4bf1-b4be-d8cddbc57087",
-      "email": "b@bzirol.com",
-      "password": "$2b$10$odkvG31D9RNTQy5BavqQzuqSIEi.nLvmkUl7r0Rt8JE70obX.uidW",
-      "journals": [
-        {
-          "id": "ad22dc7f-dc48-4549-ae26-cef01e93b469",
-          "createdAt": 1684396684797,
-          "content": "I'm a star",
-          "userId": "0cf56927-fc26-4bf1-b4be-d8cddbc57087"
-        },
-        {
-          "id": "e1fa6d37-7662-4c9a-b37e-1858717ff4da",
-          "createdAt": 1684396830713,
-          "content": "you see the stars?",
-          "userId": "0cf56927-fc26-4bf1-b4be-d8cddbc57087"
-        },
-        {
-          "id": "b411e879-841d-412a-85df-1dac8c46f847",
-          "createdAt": 1684396874808,
-          "content": "fvmvf",
-          "userId": "0cf56927-fc26-4bf1-b4be-d8cddbc57087"
         }
       ]
     }
