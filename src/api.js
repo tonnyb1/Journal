@@ -4,7 +4,7 @@ export async function loginUser({ email, password }) {
     'Authorization': `Basic ${btoa(`${email}:${password}`)}`
   });
 
-  const res = await fetch("http://localhost:3000/login", {
+  const res = await fetch("https://journal-production-2216.up.railway.app/login", {
     method: "POST",
     headers: {
       ...authHeaders,
@@ -31,7 +31,7 @@ export async function loginUser({ email, password }) {
   
 
 export async function registerUser(data) {
-    const res = await fetch("http://localhost:3000/register", {
+    const res = await fetch("https://journal-production-2216.up.railway.app/register", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -54,7 +54,7 @@ export async function registerUser(data) {
   export async function createJournal(data, token) {
     console.log(data,"datsss")
     try {
-      const res = await fetch("http://localhost:3000/journals", {
+      const res = await fetch("https://journal-production-2216.up.railway.app/journals", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -86,7 +86,7 @@ export async function registerUser(data) {
   export async function getUserJournals(token) {
     console.log("jnltoken",token)
     try {
-      const res = await fetch("http://localhost:3000/user/journal", {
+      const res = await fetch("https://journal-production-2216.up.railway.app/user/journal", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
