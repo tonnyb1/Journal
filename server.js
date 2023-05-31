@@ -11,77 +11,77 @@ const jwtSecret = process.env.JWT_SECRET;
 const port = process.env.PORT || 3000;
 
 // Define a cron schedule to run the function every day at 12 PM (noon) Kenyan time
-cron.schedule('0 12 * * *', () => {
-  getRecentJournalEntries();
-}, { timezone: 'Africa/Nairobi' });
-async function sendTestEmail(text, email) {
-  try {
-      // configure email transport
-      const transporter = nodemailer.createTransport({
-          host: 'smtp.gmail.com',
-          port: 587,
-          auth: {
-              user: 'betttonny966@gmail.com',
-              pass: 'xmbgugmxswhmxipf'
-          }
-      });
-      // send email
-      await transporter.sendMail({
-          from: 'Random Journal Website <no-reply@random-journal.com>',
-          to: email,
-          subject: 'Random Journal From Other Users',
-          text: text
-      });
-      console.log('Email sent successfully!');
-  } catch (error) {
-      console.error(error);
-  }
-} 
-function getRecentJournalEntries() {
-  const twentyFourHoursAgo = Date.now() - (24 * 60 * 60 * 1000); // calculate the timestamp for 24 hours ago
-  const recentEntriesByUser = {}; // create an empty object to store the recent journal entries by user
+// cron.schedule('0 12 * * *', () => {
+//   getRecentJournalEntries();
+// }, { timezone: 'Africa/Nairobi' });
+// async function sendTestEmail(text, email) {
+//   try {
+//       // configure email transport
+//       const transporter = nodemailer.createTransport({
+//           host: 'smtp.gmail.com',
+//           port: 587,
+//           auth: {
+//               user: 'betttonny966@gmail.com',
+//               pass: 'xmbgugmxswhmxipf'
+//           }
+//       });
+//       // send email
+//       await transporter.sendMail({
+//           from: 'Random Journal Website <no-reply@random-journal.com>',
+//           to: email,
+//           subject: 'Random Journal From Other Users',
+//           text: text
+//       });
+//       console.log('Email sent successfully!');
+//   } catch (error) {
+//       console.error(error);
+//   }
+// } 
+// function getRecentJournalEntries() {
+//   const twentyFourHoursAgo = Date.now() - (24 * 60 * 60 * 1000); // calculate the timestamp for 24 hours ago
+//   const recentEntriesByUser = {}; // create an empty object to store the recent journal entries by user
   
-  // loop through all users in the database
-  router.db.get('users').value().forEach(user => {
+//   // loop through all users in the database
+//   router.db.get('users').value().forEach(user => {
   
-    // loop through all journal entries for each user
-    const recentEntries = [];
-    user.journals.forEach(entry => {
+//     // loop through all journal entries for each user
+//     const recentEntries = [];
+//     user.journals.forEach(entry => {
   
-      // check if the entry was created within the last 24 hours
-      if (entry.createdAt > twentyFourHoursAgo) {
-        recentEntries.push({...entry}); // add the entry to the recentEntries array
-      }
-    });
+//       // check if the entry was created within the last 24 hours
+//       if (entry.createdAt > twentyFourHoursAgo) {
+//         recentEntries.push({...entry}); // add the entry to the recentEntries array
+//       }
+//     });
   
-    if(recentEntries.length > 0){
-      recentEntriesByUser[user.id] = recentEntries; // add the recent entries to the recentEntriesByUser object
-    }
-  });
+//     if(recentEntries.length > 0){
+//       recentEntriesByUser[user.id] = recentEntries; // add the recent entries to the recentEntriesByUser object
+//     }
+//   });
 
-  // get an array of all sender and recipient IDs
-  const userIds = Object.keys(recentEntriesByUser);
+//   // get an array of all sender and recipient IDs
+//   const userIds = Object.keys(recentEntriesByUser);
   
-  // loop through all possible combinations of senders and recipients
-  for (let i = 0; i < userIds.length; i++) {
-    const senderId = userIds[i];
-    const recipientIds = userIds.filter(id => id !== senderId);
+//   // loop through all possible combinations of senders and recipients
+//   for (let i = 0; i < userIds.length; i++) {
+//     const senderId = userIds[i];
+//     const recipientIds = userIds.filter(id => id !== senderId);
     
-    for (let j = 0; j < recipientIds.length; j++) {
-      const recipientId = recipientIds[j];
-      const recipient = router.db.get('users').find({id: recipientId}).value();
+//     for (let j = 0; j < recipientIds.length; j++) {
+//       const recipientId = recipientIds[j];
+//       const recipient = router.db.get('users').find({id: recipientId}).value();
 
-      // randomly select a journal entry from the sender and send it to the recipient
-      if(recentEntriesByUser[senderId].length > 0){
-        const selectedEntry = recentEntriesByUser[senderId].splice(Math.floor(Math.random() * recentEntriesByUser[senderId].length), 1)[0];
+//       // randomly select a journal entry from the sender and send it to the recipient
+//       if(recentEntriesByUser[senderId].length > 0){
+//         const selectedEntry = recentEntriesByUser[senderId].splice(Math.floor(Math.random() * recentEntriesByUser[senderId].length), 1)[0];
         
-        // send email to recipient with the journal entry details, without showing the sender's email address
-        sendTestEmail(selectedEntry.content, recipient.email)
-        console.log(`To: ${recipient.email}, Journal Entry: ${selectedEntry.content}`);
-      }
-    }
-  }
-}
+//         // send email to recipient with the journal entry details, without showing the sender's email address
+//         sendTestEmail(selectedEntry.content, recipient.email)
+//         console.log(`To: ${recipient.email}, Journal Entry: ${selectedEntry.content}`);
+//       }
+//     }
+//   }
+// }
 const middlewares = jsonServer.defaults();
 // Use default middleware
 server.use(middlewares);
@@ -125,7 +125,7 @@ server.post('/login', async (req, res) => {
 
 server.post('/register', (req, res) => {
 
-    const { email, password } = req.body;
+    const { name, email, password } = req.body;
     // Check if user already exists
     const existingUser = router.db.get('users').find({ email }).value();
     if (existingUser) {
@@ -138,9 +138,9 @@ server.post('/register', (req, res) => {
     const id = uuidv4();
     const newUser = {
       id,
+      name,
       email,
-      password: passwordHash, // store the salted password hash in the database
-      journals: []
+      password: passwordHash,
     };
 
     router.db.get('users').push(newUser).write();
