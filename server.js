@@ -200,7 +200,7 @@ server.get('/users', async (req, res) => {
   }
   // Extract the JWT token from the Authorization header
   const token = authHeader.split(' ')[1];
-
+  console.log('reached here2223')
   try {
     // Verify the JWT and extract the user ID
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
