@@ -207,7 +207,7 @@ server.get('/users', async (req, res) => {
     const userId = decoded.id;
 
     // Find the user's journals based on their ID
-    const users = await router.db.get('users').value();
+    const users = await router.db.get('users');
 
     res.status(200).json({ users });
 
