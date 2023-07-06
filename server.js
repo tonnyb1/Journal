@@ -192,7 +192,7 @@ server.post('/journals', (req, res) => {
   }
 });
 
-server.get('/user/journal', async (req, res) => {
+server.get('/users', async (req, res) => {
   // Verify that the user is authenticated by checking for a JWT in the Authorization header
   const authHeader = req.headers['authorization'];
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
@@ -207,12 +207,9 @@ server.get('/user/journal', async (req, res) => {
     const userId = decoded.id;
 
     // Find the user's journals based on their ID
-    const journals = await router.db.get('users')
-      .find({ id: userId })
-      .get('journals')
-      .value();
+    const users = await router.db.get('users').value();
 
-    res.status(200).json({ journals });
+    res.status(200).json({ users });
 
   } catch (error) {
     // If the JWT is invalid, or if there is an error decoding it, return a 401 Unauthorized error
