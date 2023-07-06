@@ -194,17 +194,17 @@ server.post('/journals', (req, res) => {
 
 server.get('/users', async (req, res) => {
   // Verify that the user is authenticated by checking for a JWT in the Authorization header
-  const authHeader = req.headers['authorization'];
-  if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return res.status(401).json({ error: 'Authentication required!' });
-  }
-  // Extract the JWT token from the Authorization header
-  const token = authHeader.split(' ')[1];
+  // const authHeader = req.headers['authorization'];
+  // if (!authHeader || !authHeader.startsWith('Bearer ')) {
+  //   return res.status(401).json({ error: 'Authentication required!' });
+  // }
+  // // Extract the JWT token from the Authorization header
+  // const token = authHeader.split(' ')[1];
   console.log('reached here2223')
   try {
     // Verify the JWT and extract the user ID
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const userId = decoded.id;
+    // const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    // const userId = decoded.id;
 
     // Find the user's journals based on their ID
     const users = await router.db.get('users');
